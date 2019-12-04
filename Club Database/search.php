@@ -2,22 +2,22 @@
  <!-- This HTML file serves as the result page from adding a shoe to the inventory-->
 <html>
     <head>
-        <title>CWRU Shoes</title>
+        <title>CWRU Clubs</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style/searchShoeResultStyle.css"/>
-    </head>   
+        <link rel="stylesheet" type="text/css" href="style/searchResultStyle.css"/>
+    </head>
     <body>
         <div class="grid">
             <div class="title">
-                <h1>CWRU Shoes</h1><br><br>
-                <p>Est. 2018, CWRU Shoes is the premier search method for finding shoe deals around Case Western's campus</p>
+                <h1>CWRU Clubs</h1><br><br>
+                <p>Copyright Rohan, Gareth, Sam 2019</p>
             </div>
             <div class="nav1">
                 <button onclick="location.href='searchShoe.html'" type="browseButton">Browse The Inventory</button>
             </div>
             <div class="nav2">
-                <button onclick="location.href='index.html'" type="homeButton">Go To Home</button>
+                <button onclick="location.href='home.html'" type="homeButton">Home</button>
             </div>
             <div class="nav3">
                 <button onclick="location.href='addShoe.html'" type="addButton">Add To The Inventory</button>
@@ -25,9 +25,9 @@
             <div class="content">
 <?php
 $servername = 'localhost:3306';
-$username = 'team7';
-$password = 'Team_7';
-$dbname = 'shoes';
+$username = 'group15';
+$password = 'Group_15';
+$dbname = 'clubs';
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -63,7 +63,7 @@ if (!$conn) {
 
 	$result = mysqli_query($conn, $sql);
 
-	if (mysqli_num_rows($result) > 0) 
+	if (mysqli_num_rows($result) > 0)
 ?>
 <table id = "shoeList"">
         <thead>
@@ -103,7 +103,7 @@ if (!$conn) {
 		<td class="updateRow" style="padding-right:36px;">
 			<form action="update.php" method="post">
 				<input type="text" name="updatePrice" value="0.0" size="4">
-				<input type="hidden" name="priceVal" value="<?php echo $row['price']; ?>"> 
+				<input type="hidden" name="priceVal" value="<?php echo $row['price']; ?>">
 				<input type="hidden" name="updateId" value="<?php echo 'size =' . $row['size'] . $ec; ?>">
 				<input type="submit" name="submit" value="Update">
 			</form>
@@ -117,7 +117,7 @@ if (!$conn) {
     </table>
 </div>
             <div class="footer">
-                <p>Copyright by Cwalina, Kao, Krishna, Steiner 2018</p>
+                <p>Copyright Rohan, Gareth, Sam 2019</p>
             </div>
         </div>
     </body>
