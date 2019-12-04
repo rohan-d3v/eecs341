@@ -1,5 +1,5 @@
 <!DOCTYPE html>
- <!-- This HTML file serves as the page to add shoes to the inventory-->
+ <!-- This HTML file serves as the page to add clubs -->
 <html>
     <head>
         <title>CWRU Clubs</title>
@@ -26,56 +26,59 @@
             </div>
             <div class="content">
                 <p>Add to the collection of clubs</p><br>
-        <form action="addShoe.php" id="shoeForm" method="post">
-                        <select name="sexList" id="sexList">
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
-                        <select name="brandList" id="brandList">
-                            <option value="Nike">Nike</option>
-                            <option value="Adidas">Adidas</option>
-                            <option value="Reebok">Reebok</option>
-                            <option value="New Balance">New Balance</option>
-                            <option value="vans">Vans</option>
-                        </select>
-                        <select name="colorList" id="colorList">
-                            <option value="black">Black</option>
-                            <option value="white">White</option>
-                            <option value="blue">Blue</option>
-                            <option value="red">Red</option>
-                            <option value="yellow">Yellow</option>
-                            <option value="green">Green</option>
-                        </select>
+        <form action="add.php" id="clubForm" method="post">
                         <select name="typeList" id="typeList">
                             <option value="Athletic">Athletic</option>
                             <option value="Art">Art</option>
-                            <option value="Other">Other</option>
                             <option value="Academic">Academic</option>
                             <option value="Political">Political</option>
-                        </select>
-			<select name="storeList" id="storeList">
-                            <option value="Payless (Parma, OH)">Payless (Parma, OH)</option>
-                            <option value="Target (Mentor, OH)">Target (Mentor, OH)</option>
-                            <option value="Walmart (Lakewood, OH)">Walmart (Lakewood, OH)</option>
-                            <option value="Finish Line (Shaker Heights, OH)">Finish Line (Shaker Heights, OH)</option>
-                        </select>
+                            <option value="Other">Other</option>
                         </select>
             <div class = "clubName">
                 <br>
                 <label>Club Name:</label>
                 <input type="text" name = "name" id = "name" value="">
                 <br>
+                <br>
+                <p>Executive Team of Year (all clubs need an executive team)</p>
+                <select name="yearList" id="yearList">
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                </select>
+                <br>
                 <label>President:</label>
-                <input type="text" name = "president" id = "president" value="">
+                <input type="text" name = "president" id = "president" value="">  <select name="typeList" id="pYearList">
+                    <option value="Freshman">Freshman</option>
+                    <option value="Sophmore">Sophmore</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Senior">Senior</option>
+                </select>
                 <br>
                 <label>Vice President:</label>
-                <input type="text" name = "vicePresident" id = "vicePresident" value="">
+                <input type="text" name = "vicePresident" id = "vicePresident" value=""> <select name="typeList" id="vYearList">
+                    <option value="Freshman">Freshman</option>
+                    <option value="Sophmore">Sophmore</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Senior">Senior</option>
+                </select>
                 <br>
                 <label>Treasurer:</label>
-                <input type="text" name = "treasurer" id = "treasurer" value="">
+                <input type="text" name = "treasurer" id = "treasurer" value=""> <select name="typeList" id="tYearList">
+                    <option value="Freshman">Freshman</option>
+                    <option value="Sophmore">Sophmore</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Senior">Senior</option>
+                </select>
                 <br>
                 <label>Risk Manager:</label>
-                <input type="text" name = "riskManager" id = "riskManager" value="">
+                <input type="text" name = "riskManager" id = "riskManager" value=""> <select name="typeList" id="rYearList">
+                    <option value="Freshman">Freshman</option>
+                    <option value="Sophmore">Sophmore</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Senior">Senior</option>
+                </select>
                 <br>
                 <label>Advisor:</label>
                 <input type="text" name = "advisor" id = "advisor" value="">

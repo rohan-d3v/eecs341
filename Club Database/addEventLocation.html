@@ -1,8 +1,8 @@
 <!DOCTYPE html>
- <!-- This HTML file serves as the page to conduct an inventory search-->
+ <!-- This HTML file serves as the page to add events with locations -->
 <html>
     <head>
-        <title>CWRU Shoes</title>
+        <title>CWRU Clubs</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style/searchShoeStyle.css"/>
@@ -10,8 +10,8 @@
     <body>
         <div class="grid">
             <div class="title">
-                <h1>CWRU Shoes</h1><br><br>
-                <p>Est. 2018, CWRU Shoes is the premier search method for finding shoe deals around Case Western's campus</p>
+                <h1>CWRU Clubs</h1><br><br>
+                <p>Find Information about CWRU Clubs</p>
             </div>
             <div class="nav1">
                 <button onclick="location.href='searchShoe.html'" type="browseButton">Browse The Inventory</button>
@@ -23,55 +23,68 @@
                 <button onclick="location.href='addShoe.html'" type="addButton">Add To The Inventory</button>
             </div>
             <div class="content">
-                <p>Use the search bar below to browse the selection of shoes!</p><br>
-        <form action="searchShoe.php" id="shoeForm" method="post">
-                        <select name="sexList" id="sexList">
-			    <option value="blank">Club</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
-                        <select name="brandList" id="brandList">
-			    <option value="blank">--Brand--</option>
-                            <option value="Nike">Nike</option>
-                            <option value="Adidas">Adidas</option>
-                            <option value="Reebok">Reebok</option>
-                            <option value="New Balance">New Balance</option>
-                            <option value="vans">Vans</option>
-                        </select>
-                        <select name="colorList" id="colorList">
-			    <option value="blank">--Color--</option>
-                            <option value="black">Black</option>
-                            <option value="white">White</option>
-                            <option value="blue">Blue</option>
-                            <option value="red">Red</option>
-                            <option value="yellow">Yellow</option>
-                            <option value="green">Green</option>
-                        </select>
-                        <select name="sizeList" id="sizeList">
-			    <option value="blank">--Size--</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                        </select>
-                        <select name="storeList" id="storeList">
-			    <option value="blank">--Store--</option>
-                            <option value="Payless (Parma, OH)">Payless (Parma, OH)</option>
-                            <option value="Target (Mentor, OH)">Target (Mentor, OH)</option>
-                            <option value="Walmart (Lakewood, OH)">Walmart (Lakewood, OH)</option>
-                            <option value="Finish Line (Shaker Heights, OH)">Finish Line (Shaker Heights, OH)</option>
-                        </select>
-                <br><br><br>
-                <input type="submit">
-        </form>
-
-            </div>
-            <div class="footer">
-                <p>Copyright by Cwalina, Kao, Krishna, Steiner 2018</p>
-            </div>
-        </div>
-    </body>
+              <p>Add to the collection of events and locations</p><br>
+      <form action="addShoe.php" id="shoeForm" method="post">
+                      <select name="sexList" id="sexList">
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                      </select>
+                      <select name="brandList" id="brandList">
+                          <option value="Nike">Nike</option>
+                          <option value="Adidas">Adidas</option>
+                          <option value="Reebok">Reebok</option>
+                          <option value="New Balance">New Balance</option>
+                          <option value="vans">Vans</option>
+                      </select>
+                      <select name="colorList" id="colorList">
+                          <option value="black">Black</option>
+                          <option value="white">White</option>
+                          <option value="blue">Blue</option>
+                          <option value="red">Red</option>
+                          <option value="yellow">Yellow</option>
+                          <option value="green">Green</option>
+                      </select>
+                      <select name="typeList" id="typeList">
+                          <option value="Athletic">Athletic</option>
+                          <option value="Art">Art</option>
+                          <option value="Other">Other</option>
+                          <option value="Academic">Academic</option>
+                          <option value="Political">Political</option>
+                      </select>
+    <select name="storeList" id="storeList">
+                          <option value="Payless (Parma, OH)">Payless (Parma, OH)</option>
+                          <option value="Target (Mentor, OH)">Target (Mentor, OH)</option>
+                          <option value="Walmart (Lakewood, OH)">Walmart (Lakewood, OH)</option>
+                          <option value="Finish Line (Shaker Heights, OH)">Finish Line (Shaker Heights, OH)</option>
+                      </select>
+                      </select>
+          <div class = "clubName">
+              <br>
+              <label>Club Name:</label>
+              <input type="text" name = "name" id = "name" value="">
+              <br>
+              <label>President:</label>
+              <input type="text" name = "president" id = "president" value="">
+              <br>
+              <label>Vice President:</label>
+              <input type="text" name = "vicePresident" id = "vicePresident" value="">
+              <br>
+              <label>Treasurer:</label>
+              <input type="text" name = "treasurer" id = "treasurer" value="">
+              <br>
+              <label>Risk Manager:</label>
+              <input type="text" name = "riskManager" id = "riskManager" value="">
+              <br>
+              <label>Advisor:</label>
+              <input type="text" name = "advisor" id = "advisor" value="">
+          </div>
+  <br><br>
+              <input type="submit">
+      </form>
+          </div>
+          <div class="footer">
+              <p>Copyright Rohan, Gareth, Sam 2019</p>
+          </div>
+      </div>
+  </body>
 </html>

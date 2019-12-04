@@ -12,17 +12,17 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-  $year   = strval($_POST["yearList"]);
   $type   = strval($_POST["typeList"]);
 	$name	= strval($_POST["name"]);
+  $year   = strval($_POST["yearList"]);
   $president  = strval($_POST["president"]);
-  $pyear = strval($_POST["presidentYear"]);
+  $pyear = strval($_POST["pYearList"]);
   $vicePresident   = strval($_POST["vicePresident"]);
-  $vpyear = strval($_POST["vpYear"]);
+  $vpyear = strval($_POST["vYearList"]);
   $treasurer  = strval($_POST["treasurer"]);
-  $tyear = strval($_POST["treasurerYear"]);
+  $tyear = strval($_POST["tYearList"]);
   $riskManager   = strval($_POST["riskManager"]);
-  $rmyear = strval($_POST["rmYear"]);
+  $rmyear = strval($_POST["rYearList"]);
   $advisor   = strval($_POST["advisor"]);
   $id = uniqid();
   $pid = uniqid(p);
