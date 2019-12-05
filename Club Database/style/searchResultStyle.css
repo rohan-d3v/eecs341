@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: white;
 }
 
 .grid {
@@ -31,13 +31,13 @@ body {
 
  .sidebar {
     grid-area: sidebar;
-    background-color: grey;
+    background-color: white;
     padding: 50px;
  }
 
  .nav1 {
     grid-area: nav1;
-    background-color: red;
+    background-color: black;
     text-align: right;
     display: flex;
     justify-content: center;
@@ -76,7 +76,7 @@ body {
 
  .nav2 {
     grid-area: nav2;
-    background-color: red ;
+    background-color: black ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,7 +84,7 @@ body {
 
  .nav3 {
     grid-area: nav3;
-    background-color: red;
+    background-color: black;
     text-align: left;
     display: flex;
     justify-content: center;
@@ -95,7 +95,7 @@ body {
  .content {
     grid-area: content;
     text-align: center;
-    background-color: grey;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;

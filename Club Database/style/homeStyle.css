@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: white;
 }
 
 .grid {
@@ -26,28 +26,21 @@ body {
    grid-area: title;
    text-align: center;
    padding: 4%;
-   color: red;
+   color: black;
 }
 
  .sidebar {
     grid-area: sidebar;
-    background-color: grey;
+    background-color: white;
     padding: 50px;
  }
 
- .nav1 {
-    grid-area: nav1;
-    background-color: red;
-    text-align: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
+
 
 .nav1 button {
-    /*color: #ddd !important; */
+    color: #ddd !important;
     text-transform: uppercase;
-    background: #ed3330;
+    background: black;
     padding: 20px;
     border-radius: 5px;
     display: inline-block;
@@ -57,7 +50,7 @@ body {
  .nav2 button {
     color: #fff !important;
     text-transform: uppercase;
-    background: #ed3330;
+    background: black;
     padding: 20px;
     border-radius: 5px;
     display: inline-block;
@@ -67,16 +60,25 @@ body {
 .nav3 button {
     color: #fff !important;
     text-transform: uppercase;
-    background: #ed3330;
+    background: black;
     padding: 20px;
     border-radius: 5px;
     display: inline-block;
     border: none;
 }
 
+ .nav1 {
+    grid-area: nav1;
+    background-color: white;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
  .nav2 {
     grid-area: nav2;
-    background-color: red ;
+    background-color: white ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,7 +86,7 @@ body {
 
  .nav3 {
     grid-area: nav3;
-    background-color: red;
+    background-color: white;
     text-align: left;
     display: flex;
     justify-content: center;
@@ -95,10 +97,13 @@ body {
  .content {
     grid-area: content;
     text-align: center;
-    background-color: grey;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    font-size: 20px
  }
  .content p {
      padding: 10px;
