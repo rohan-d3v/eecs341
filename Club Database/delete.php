@@ -1,8 +1,8 @@
 <?php
 $servername = 'localhost:3306';
-$username = 'team7';
-$password = 'Team_7';
-$dbname = 'shoes';
+$username = 'group15';
+$password = 'Group_15';
+$dbname = 'clubs';
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -14,17 +14,20 @@ if (!$conn) {
 
 $query = strval($_POST["id"]);
 
-        $type   = strval($_POST["sexList"]);
-        $brand  = strval($_POST['brandList']);
-        $color  = strval($_POST["colorList"]);
-        $size   = strval($_POST["sizeList"]);
-        $store  = strval($_POST["storeList"]);
-        $price  = strval($_POST["price"]);
+        $id   = strval($_POST["idList"]);
+        $type   = strval($_POST["typeList"]);
+        $name	= strval($_POST["name"]);
+        $president  = strval($_POST["president"]);
+        $vicePresident   = strval($_POST["vicePresident"]);
+        $treasurer  = strval($_POST["treasurer"]);
+        $riskManager   = strval($_POST["riskManager"]);
+        $advisor   = strval($_POST["advisor"]);
 
-        $sql = "delete from shoe where " . "$query" . " LIMIT 1";
+
+        $sql = "delete from club where " . "$query" . " LIMIT 1";
 
         if (mysqli_query($conn, $sql)) {
-		header('Location: index.html');
+		header('Location: home.html');
         } else {
                 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
@@ -32,4 +35,3 @@ $query = strval($_POST["id"]);
 mysqli_close($conn);
 
 ?>
-
