@@ -5,50 +5,83 @@
         <title>CWRU Shoes</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style/searchStyle.css"/>
+        <link rel="stylesheet" type="text/css" href="style/search.css"/>
+        <link rel="stylesheet" type="text/css" href="style/navbar.css"/>
+        <script src="https://kit.fontawesome.com/cfe22e3d35.js" crossorigin="anonymous"></script>
+
     </head>   
     <body>
-        <div class="grid">
-            <div class="title">
-                <h1>CWRU Clubs</h1><br><br>
+
+
+
+        <div class="title">
+            <h1>CWRU Clubs</h1>
+            <h1>SEARCH</h1><br>
+        </div>
+        
+        <div class="nav1">
+            <button class="hov" onclick="location.href='home.html'" type="homeButton">Home</button>
+            
+            <div class="dropdown">
+              <button class="dropbtn">Add</button>
+              <div class="dropdown-content">
+                <a class="hov" href="add.html">Club</a>
+                <a class="hov" href="addEvent.html">Event</a>
+                <a class="hov" href="addExecTeam.html">Executive Team</a>
+                <a class="hov" href="addBudget.html">Budget</a>
+                <a class="hov" href="addMember.html">Member</a>
+              </div>
             </div>
-            <div class="nav1">
-                <button onclick="location.href='search.html'" type="browseButton">Search</button>
+
+            <button class="hov" onclick="location.href='search.html'" type="browseButton">Search</button>
+            <button class="hov" onclick="location.href='update.html'" type="updateButton">Update</button>
+        </div>
+
+
+        <div class="content">
+        <form action="search.php" id="clubForm" method="post">
+                            
+
+            <div class="box">
+                <select name="clubName" id="clubName">
+                    <option value="" disabled selected>Club Name</option>
+
+                    <option value="all">All</option>
+                    <option value="club1">Club 1</option>
+                    <option value="club2">Club 2</option>
+                </select>
             </div>
-            <div class="nav2">
-                <button onclick="location.href='home.html'" type="homeButton">Home</button>
+
+            <div class="box">
+                <select name="Year" id="Year">
+                    <option value="" disabled selected>Year</option>
+
+                    <option value="All">All</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                </select>
             </div>
-            <div class="nav3">
-                <button onclick="location.href='add.html'" type="addButton">Add</button>
+
+            <div class="box">
+                <select name="searchOption" id="searchOption">
+                    <option value="" disabled selected>Seach Option</option>
+
+                    <option value="exec">Show Exec Team</option>
+                    <option value="budget">Show Budget</option>
+                    <option value="avfbudget">Show Average Budget (pick 1 year, all clubs)</option>
+                </select>
             </div>
-            <div class="content">
-        <form action="search.php" id="shoeForm" method="post">
-                        <select name="sexList" id="sexList">
-			    <option value="blank">Club Name</option>
-                            <option value="all">All</option>
-                            <option value="club1">Club 1</option>
-                            <option value="club2">Club 2</option>
-                        </select>
-                        <select name="brandList" id="brandList">
-			    <option value="blank">Year</option>
-                            <option value="All">All</option>
-                            <option value="2000">2000</option>
-                            <option value="2001">2001</option>
-                            <option value="2002">2002</option>
-                            <option value="2003">2003</option>
-                        </select>
-                        <select name="colorList" id="colorList">
-			    <option value="blank">Seach Option</option>
-                            <option value="exec">Show Exec Team</option>
-                            <option value="budget">Show Budget</option>
-                            <option value="avfbudget">Show Average Budget (pick 1 year, all clubs)</option>
-                        </select>
 			    
-                <br><br><br>
-                <input type="submit">
+            <br>
+            <br>
+            <br>
+            <input class="sub" type="submit">
+        
         </form>
 
-            </div>
+
         </div>
     </body>
 </html>
