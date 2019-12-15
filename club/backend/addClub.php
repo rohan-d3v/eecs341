@@ -31,20 +31,51 @@ if (!$conn) {
   $rid = uniqid('r');
 
 
-	$sql = "insert into club(clubID, name, type, memberNumber) values('$id', '$name', '$type')";      //don't know how to do count
-  $sql = "insert into execTeam(clubID, year, president, vicePresident, treasurer, riskManager, advisor) values('$id', '$year', '$pid', '$vid', '$tid', '$rid', '$advisor')";
-	$sql = "insert into member(studentID, clubID, name, year) values('$pid', '$id', '$president', '$pyear')";
-  $sql = "insert into member(studentID, clubID, name, year) values('$vid', '$id', '$vicePresident', '$vpyear')";
-  $sql = "insert into member(studentID, clubID, name, year) values('$tid', '$id', '$treasurer', '$tyear')";
-  $sql = "insert into member(studentID, clubID, name, year) values('$rid', '$id', '$riskManager', '$rmyear')";
+	$sql1 = "insert into club(clubID, name, type, memberNumber) values('$id', '$name', '$type')";      //don't know how to do count
+  $sql2 = "insert into execTeam(clubID, year, president, vicePresident, treasurer, riskManager, advisor) values('$id', '$year', '$pid', '$vid', '$tid', '$rid', '$advisor')";
+	$sql3 = "insert into member(studentID, clubID, name, year) values('$pid', '$id', '$president', '$pyear')";
+  $sql4 = "insert into member(studentID, clubID, name, year) values('$vid', '$id', '$vicePresident', '$vpyear')";
+  $sql5 = "insert into member(studentID, clubID, name, year) values('$tid', '$id', '$treasurer', '$tyear')";
+  $sql6 = "insert into member(studentID, clubID, name, year) values('$rid', '$id', '$riskManager', '$rmyear')";
 
 
 
-	if (mysqli_query($conn, $sql)) {
-		header('Location: addResult.html');
+	if (mysqli_query($conn, $sql1)) {
+		#header('Location: addResult.html');
 	} else {
     		echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 	}
+
+  if (mysqli_query($conn, $sql2)) {
+    #header('Location: addResult.html');
+  } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+  }
+
+  if (mysqli_query($conn, $sql3)) {
+    #header('Location: addResult.html');
+  } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+  }
+
+  if (mysqli_query($conn, $sql4)) {
+		#header('Location: addResult.html');
+	} else {
+    		echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+	}
+
+  if (mysqli_query($conn, $sql5)) {
+    #header('Location: addResult.html');
+  } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+  }
+
+  if (mysqli_query($conn, $sql6)) {
+    header('Location: addResult.html');
+  } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+  }
+
 
 mysqli_close($conn);
 
