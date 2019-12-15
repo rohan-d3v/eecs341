@@ -3,7 +3,7 @@
         </div>
 
         <div class="title">
-            <h1>Club Succesfully Updated</h1>
+            <h1>Succesfully Updated</h1>
         </div>
 
     </body>

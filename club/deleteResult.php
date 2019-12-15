@@ -3,7 +3,7 @@
         </div>
 
         <div class="title">
-            <h1>Succesfully Added</h1>
+            <h1>Succesfully Deleted</h1>
         </div>
 
     </body>

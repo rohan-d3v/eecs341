@@ -2,6 +2,7 @@
 
 	include "PHP_common.php";
 
+
 	$name	= strval($_POST["eveName"]);
 	$date 	= strval($_POST["date"]);
 	$food 	= strval($_POST["food"]);
@@ -9,14 +10,15 @@
 	$clubID	= strval($_POST["id"]);
 
 	if (isset($_POST["food"])){
-                $food = 1;
-        }
-
+        $food = 1;
+    }
 	if (!isset($_POST["food"])){
 		$food = 0;
 	}
+
 	echo $date;
-	$sql = "insert into Event(eventName, eventDate, food, location, clubID) values('$name', '$date', '$food', '$room', '$clubID')";
+
+	$sql = "insert into event(eventName, eventDate, food, location, clubID) values('$name', '$date', '$food', '$room', '$clubID')";
 
 
 	if (mysqli_query($conn, $sql)) {

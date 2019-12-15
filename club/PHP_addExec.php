@@ -2,7 +2,7 @@
 
 	include "PHP_common.php";
 
-	$type   	= strval($_POST["typeList"]);
+
 	$name		= strval($_POST["name"]);
 	$year   	= strval($_POST["yearList"]);
 	$president  = strval($_POST["president"]);
@@ -22,7 +22,7 @@
 
 
 
-	$sql1 = "insert into execTeam(clubID, year, president, viceP, treasurer, riskM, advisor) values('$id', '$year', '$pid', '$vid', '$tid', '$rid', '$advisor')";
+	$sql1 = "insert into execTeam(clubID, year, president, vicePresident, treasurer, riskManager, advisor) values('$id', '$year', '$pid', '$vid', '$tid', '$rid', '$advisor')";
 	$sql2 = "insert into member(studentID, clubID, name, year) values('$pid', '$id', '$president', '$pyear')";
 	$sql3 = "insert into member(studentID, clubID, name, year) values('$vid', '$id', '$viceP', '$vpyear')";
 	$sql4 = "insert into member(studentID, clubID, name, year) values('$tid', '$id', '$treasurer', '$tyear')";

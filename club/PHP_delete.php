@@ -17,7 +17,7 @@ include "PHP_common.php";
         $sql = "delete from club where " . "$query" . " LIMIT 1";
 
         if (mysqli_query($conn, $sql)) {
-		header('Location: home.html');
+	       header('Location: deleteResult.php');
         } else {
                 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
