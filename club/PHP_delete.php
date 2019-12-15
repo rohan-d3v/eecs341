@@ -1,6 +1,6 @@
 <?php
 
-include "common.php";
+include "PHP_common.php";
 
         $query = strval($_POST["id"]);
 

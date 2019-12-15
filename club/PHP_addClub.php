@@ -1,5 +1,5 @@
 <?php
-	include "common.php";
+	include "PHP_common.php";
 
 	$id   = uniqid();
 	$name = strval($_POST["name"]);

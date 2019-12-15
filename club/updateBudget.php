@@ -3,7 +3,7 @@
 <h1>UPDATE BUDGET</h1><br>
 </div>
 
-<form action="backend/updateBudget.php" id="clubForm" method="post">
+<form action="PHP_updateBudget.php" id="clubForm" method="post">
     <div class = "umbrella">
 
         <br>

@@ -3,7 +3,7 @@
 <h1>UPDATE MEMBER</h1><br>
 </div>
 
-<form action="backend/updateMember.php" id="clubForm" method="post">
+<form action="PHP_updateMember.php" id="clubForm" method="post">
     <div class = "umbrella">
 
         <br>  

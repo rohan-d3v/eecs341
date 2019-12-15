@@ -1,6 +1,6 @@
 <?php
 
-	include "common.php";
+	include "PHP_common.php";
 
 	$name	= strval($_POST["eveName"]);
 	$date 	= strval($_POST["date"]);

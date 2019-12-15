@@ -4,7 +4,7 @@
 <h1>ADD BUDGET</h1><br>
 </div>
 
-<form action="backend/addBudget.php" id="clubForm" method="post">
+<form action="PHP_addBudget.php" id="clubForm" method="post">
     <div class = "umbrella">
 
         <br>

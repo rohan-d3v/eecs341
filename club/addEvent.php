@@ -4,7 +4,7 @@
 <h1>ADD EVENT</h1><br>
 </div>
 
-<form action="backend/addEvent.php" id="clubForm" method="post">
+<form action="PHP_addEvent.php" id="clubForm" method="post">
     <div class = "umbrella">
 
         <br>

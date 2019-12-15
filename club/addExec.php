@@ -4,7 +4,7 @@
 <h1>ADD EXEC TEAM</h1><br>
 </div>
 
-<form action="backend/addExecTeam.php" id="clubForm" method="post">
+<form action="PHP_addExecTeam.php" id="clubForm" method="post">
     <div class = "umbrella">
         
         <br>

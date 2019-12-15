@@ -1,6 +1,6 @@
 <?php
 
-	include "common.php";
+	include "PHP_common.php";
 
 	$type   	= strval($_POST["typeList"]);
 	$name		= strval($_POST["name"]);

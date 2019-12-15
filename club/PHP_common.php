@@ -8,13 +8,13 @@ $dbname = 'clubs';
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
-if($link){
-    echo("Database connected successfully");
-}
-// Check connection
-if (!$conn) {
-    echo("Connection failed: " . mysqli_connect_error());
-}
+// if($conn){
+//     echo("Database connected successfully");
+// }
+// // Check connection
+// if (!$conn) {
+//     echo("Connection failed: " . mysqli_connect_error());
+// }
 
 ?>
 

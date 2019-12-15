@@ -1,6 +1,6 @@
 <?php
 
-	include "common.php";
+	include "PHP_common.php";
 
 	$year		= strval($_POST["yearList"]);
 	$semester 	= strval($_POST["semesterList"]);

@@ -4,7 +4,7 @@
 <h1>ADD MEMBER</h1><br>
 </div>
 
-<form action="backend/addMember.php" id="clubForm" method="post">
+<form action="PHP_addMember.php" id="clubForm" method="post">
     <div class = "umbrella">
 
         <br>

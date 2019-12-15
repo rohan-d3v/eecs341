@@ -3,7 +3,7 @@
 <h1>UPDATE EXEC TEAM</h1><br>
 </div>
 
-<form action="backend/updateExec.php" id="clubForm" method="post">
+<form action="PHP_updateExec.php" id="clubForm" method="post">
     <div class = "umbrella">
 
         <br>
