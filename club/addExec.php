@@ -18,11 +18,6 @@
         <br>
         <br>
 
-        <div class="group">Executive Team of Year (give studentID if they have one, if not give a name)</div>
-
-        <br>
-        <br>
-
         <div class="box">
         <select name="yearList" id="yearList">
             <option value="" disabled selected>Year</option>
@@ -33,25 +28,23 @@
         </select>
         </div>
 
-
-
         <br>
         <br> 
-        
 
         <div class="search-box">
             <input type="text" name = "president" id = "president" value=""class="search-txt" placeholder="President"/>
-            <input type="text" name = "pid" id = "pid" value="" class="search-txt" placeholder="Student ID (Optional)"/>
             <div class="search-btn">
             </div>
         </div>
 
         <div class="box">
         <select name="typeList" id="pYearList">
+            <option value="" disabled selected>GRADE</option>
             <option value="Freshman">Freshman</option>
             <option value="Sophmore">Sophmore</option>
             <option value="Junior">Junior</option>
             <option value="Senior">Senior</option>
+            <option value="Senior">Other</option>
         </select>
         </div>
 
@@ -60,74 +53,71 @@
         
         <div class="search-box">
             <input type="text" name = "vicePresident" id = "vicePresident" value="" class="search-txt" placeholder="Vice President"/>
-            <input type="text" name = "vid" id = "vid" value="" class="search-txt" placeholder="Student ID (Optional)"/>
             <div class="search-btn">
             </div>
         </div>
 
         <div class="box">
         <select name="typeList" id="vYearList">
+            <option value="" disabled selected>GRADE</option>
             <option value="Freshman">Freshman</option>
             <option value="Sophmore">Sophmore</option>
             <option value="Junior">Junior</option>
             <option value="Senior">Senior</option>
+            <option value="Senior">Other</option>
         </select>
         </div>
-
 
         <br>
         <br> 
         
         <div class="search-box">
             <input type="text" name = "treasurer" id = "treasurer" value="" class="search-txt" placeholder="Treasurer"/>
-            <input type="text" name = "tid" id = "tid" value="" class="search-txt" placeholder="Student ID (Optional)"/>
             <div class="search-btn">
             </div>
         </div>
         
         <div class="box">
         <select name="typeList" id="tYearList">
+            <option value="" disabled selected>GRADE</option>
             <option value="Freshman">Freshman</option>
             <option value="Sophmore">Sophmore</option>
             <option value="Junior">Junior</option>
             <option value="Senior">Senior</option>
+            <option value="Senior">Other</option>
         </select>
         </div>
-
 
         <br>
         <br> 
 
         <div class="search-box">
             <input type="text" name = "riskManager" id = "riskManager" value="" class="search-txt" placeholder="Risk Manager"/>
-            <input type="text" name = "rid" id = "rid" value="" class="search-txt" placeholder="Student ID (Optional)"/>
             <div class="search-btn">
             </div>
         </div>
 
         <div class="box">
         <select name="typeList" id="rYearList">
+            <option value="" disabled selected>GRADE</option>
             <option value="Freshman">Freshman</option>
             <option value="Sophmore">Sophmore</option>
             <option value="Junior">Junior</option>
             <option value="Senior">Senior</option>
+            <option value="Senior">Other</option>
         </select>
         </div>
 
-
         <br>
         <br> 
-
 
         <div class="search-box">
             <input type="text" name = "advisor" id = "advisor" value="" class="search-txt" placeholder="Advisor"/>
             <div class="search-btn">
         </div>
-        
 
         <br>
         <br>
-    
         
         <input class="sub" type="submit">
         
