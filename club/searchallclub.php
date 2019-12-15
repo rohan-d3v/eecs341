@@ -26,7 +26,6 @@
                 <option value="" disabled selected>Seach Option</option>
 
                 <option value="exec">SHOW ALL EVENTS WITH FOOD</option>
-                <option value="budget">SHOW CLUB WITH THE HIGHEST BUDGET</option>
                 <option value="avfbudget">SHOW ALL CLUBS WITH BUDGETS</option>
                 <option value="avfbudget">SHOW AVERAGE BUDGET</option>
                 <option value="avfbudget">SHOW CLUB WITH THE HIGHEST BUDGET</option>

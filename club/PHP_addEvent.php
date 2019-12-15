@@ -18,7 +18,7 @@
 
 	echo $date;
 
-	$sql = "insert into event(eventName, eventDate, food, location, clubID) values('$name', '$date', '$food', '$room', '$clubID')";
+	$sql = "insert into events(eventName, eventDate, food, location, clubID) values('$name', '$date', '$food', '$room', '$clubID')";
 
 
 	if (mysqli_query($conn, $sql)) {
