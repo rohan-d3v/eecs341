@@ -1,14 +1,13 @@
 <?php
-  
 	include "common.php";
 
 	$id   = uniqid();
 	$name = strval($_POST["name"]);
 	$type = strval($_POST["typeList"]);
 
-
-
-	$sql1 = "insert into club(clubID, name, type, memberNumber) values('$id', '$name', '$type')"; 
+	echo $_POST["name"];
+	echo $_POST["typeList"];
+	$sql1 = "insert into Club(clubName, clubType) values('$name', '$type')"; 
 
 
 	if (mysqli_query($conn, $sql1)) {
@@ -20,3 +19,4 @@
 	mysqli_close($conn);
 
 ?>
+
