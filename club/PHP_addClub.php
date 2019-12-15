@@ -8,7 +8,7 @@
 
 	echo $_POST["name"];
 	echo $_POST["typeList"];
-	$sql1 = "insert into club(clubName, clubType) values('$id', '$name', '$type')"; 
+	$sql1 = "insert into club(clubID, clubName, clubType) values('$id', '$name', '$type')"; 
 
 
 	if (mysqli_query($conn, $sql1)) {
