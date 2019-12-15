@@ -10,7 +10,7 @@
 
 
 
-	$sql = "insert into event(clubID, year, semester, amountLeft, amountTotal) values('$id', '$year', '$semester', '$budget', '$budget')";
+	$sql = "insert into budget(clubID, year, amountTotal) values('$id', '$year', '$budget')";
 
 
 

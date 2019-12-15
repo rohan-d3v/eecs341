@@ -37,42 +37,24 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-  $year   = strval($_POST["yearList"]);
-  $clubID   = strval($_POST["idList"]);
-    $name   = strval($_POST["name"]);
-  $id = uniqid();
-
-	$whereVal = " where ";
-	$yearVal = "year='$year' ";
-	$clubVal = "AND clubID='$clubID' ";
-	$nameVal  = "AND name='$name' ";
-	$idVal = "AND id='$id' ";
-
-	if($year=="blank"){$yearVal = ""; $clubVal = "clubID='$club' ";};
-	if($clubID=="blank"){$clubVal = ""; $nameVal = "size='$size' ";};
-	if($name=="blank"){$nameVal = ""; $idVal = "color='$color' ";};
-	if($id=="blank"){$idVal = ""; $typeVal = "type='$type' ";};
-
-	if($brand=="blank" && $club=="blank" && $size=="blank" && $color=="blank" && $type=="blank")
-	{$whereVal = "";};
-
-	$sql = "select * from club" . $whereVal . $yearVal . $clubVal . $nameVal . $idVal . $typeVal;
+	$sql = "select eventName, eventDate, location, clubName from club, event where food = 1, event.clubID = club.clubID";          #show all events with food
+  $sql = "select clubName, club.clubID, clubType, max(budget) from club, budget where budget.clubID = club.clubID group by clubName, club.clubID, clubType";              #show club with max budget
+  $sql = "select clubName, club.clubID, clubType, amountTotal from club, budget where budget.clubID = club.clubID";               # show clubs with budgets
+  $sql = "select avg(budget) from budget";                                                                                        # show average budget
+  $sql = "select clubName, club.clubID, clubType, max(y.c) from (select club.clubID, count(unique name) as c from club, member where club.clubID = member.clubID group by club.clubName) y, club where club.clubID = y.club.clubID group by club.clubName, club.clubID, clubType";               # show club with most members
+  $sql = "select clubName, club.clubID, clubType, min(y.c) from (select club.clubID, count(unique name) as c from club, member where club.clubID = member.clubID group by club.clubName) y, club where club.clubID = y.club.clubID group by club.clubName, club.clubID, clubType";               # show club with least members #
 
 	$result = mysqli_query($conn, $sql);
 
 	if (mysqli_num_rows($result) > 0)
 ?>
-<table id = "shoeList"">
+<table id = "clubList"">
         <thead>
             <tr>
-                <th style="padding-right:36px;">Size</th>
-                <th style="padding-right:36px;">Brand</th>
-                <th style="padding-right:36px;">club</th>
-                <th style="padding-right:36px;">Color</th>
-		<th style="padding-right:36px;">Sex</th>
-		<th style="padding-right:36px;">Price</th>
-  		<th style="padding-right:36px;">Delete</th>
-		<th style="padding-right:36px;">Update Price</th>
+                <th style="padding-right:36px;">Event Name</th>
+                <th style="padding-right:36px;">Event Date</th>
+                <th style="padding-right:36px;">Location</th>
+                <th style="padding-right:36px;">Club Name</th>
 
             </tr>
         </thead>
@@ -87,7 +69,7 @@ if (!$conn) {
                 <td class="updateBrand" style="padding-right:36px;"><?php echo $row["brand_name"]; ?></td>
                 <td class="updateclub" style="padding-right:36px;"><?php echo $row["clubID"]; ?></td>
                 <td class="updateColor" style="padding-right:36px;"><?php echo $row["color"]; ?></td>
-		<td class="updateSex" style="padding-right:36;"><?php echo $row['type']; ?></td>
+		            <td class="updateSex" style="padding-right:36;"><?php echo $row['type']; ?></td>
                 <td class="updatePrice" style="padding-right:36px;"><?php echo $row["price"]; ?></td>
 		<?php
 			$ec = " AND brand_name='$row[brand_name]' AND clubID='$row[clubID]' AND color='$row[color]' AND type='$row[type]' AND price='$row[price]'"; ?>
