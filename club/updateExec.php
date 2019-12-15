@@ -29,23 +29,11 @@
 
         <br>
         <br>
-
-        <input class="del" type="submit" value="DELETE PRESIDENT">
-        <input class="del" type="submit" value="DELETE VICE PRESIDENT">
-        <input class="del" type="submit" value="DELETE TREASURER">
-        <input class="del" type="submit" value="DELETE RISK MANAGER">
-        <input class="del" type="submit" value="DELETE ADVISOR">
-
-        <br>
-        <br>
-        <br>
-        <br>
         <br>
         <br>
         
         <div class="search-box">
             <input type="text" name = "president" id = "president" value=""class="search-txt" placeholder="New President"/>
-            <input type="text" name = "pid" id = "pid" value="" class="search-txt" placeholder="New Student ID (Optional)"/>
             <div class="search-btn">
             </div>
         </div>
@@ -57,6 +45,7 @@
             <option value="Sophmore">Sophmore</option>
             <option value="Junior">Junior</option>
             <option value="Senior">Senior</option>
+            <option value="Senior">Other</option>
         </select>
         </div>
 
@@ -65,7 +54,6 @@
         
         <div class="search-box">
             <input type="text" name = "vicePresident" id = "vicePresident" value="" class="search-txt" placeholder="New Vice President"/>
-            <input type="text" name = "vid" id = "vid" value="" class="search-txt" placeholder="New Student ID (Optional)"/>
             <div class="search-btn">
             </div>
         </div>
@@ -77,6 +65,7 @@
             <option value="Sophmore">Sophmore</option>
             <option value="Junior">Junior</option>
             <option value="Senior">Senior</option>
+            <option value="Senior">Other</option>
         </select>
         </div>
 
@@ -84,8 +73,7 @@
         <br> 
         
         <div class="search-box">
-            <input type="text" name = "treasurer" id = "treasurer" value="" class="search-txt" placeholder="Treasurer"/>
-            <input type="text" name = "tid" id = "tid" value="" class="search-txt" placeholder="Student ID (Optional)"/>
+            <input type="text" name = "treasurer" id = "treasurer" value="" class="search-txt" placeholder="New Treasurer"/>
             <div class="search-btn">
             </div>
         </div>
@@ -97,6 +85,7 @@
             <option value="Sophmore">Sophmore</option>
             <option value="Junior">Junior</option>
             <option value="Senior">Senior</option>
+            <option value="Senior">Other</option>
         </select>
         </div>
 
@@ -105,7 +94,6 @@
 
         <div class="search-box">
             <input type="text" name = "riskManager" id = "riskManager" value="" class="search-txt" placeholder="New Risk Manager"/>
-            <input type="text" name = "rid" id = "rid" value="" class="search-txt" placeholder="New Student ID (Optional)"/>
             <div class="search-btn">
             </div>
         </div>
@@ -117,6 +105,7 @@
             <option value="Sophmore">Sophmore</option>
             <option value="Junior">Junior</option>
             <option value="Senior">Senior</option>
+            <option value="Senior">Other</option>
         </select>
         </div>
 

@@ -106,6 +106,7 @@
 }
 
 .box select {
+    outline: none !important;
     background-color: grey;
     color: white;
     padding-left: 20px;
@@ -162,7 +163,7 @@
     left: 0;
     right: 0;
     width: 200px;
-    background-color: #2687ad;
+    background-color: #5caee0;
     border: none;
     color: white;
     padding: 16px 32px;
@@ -174,7 +175,7 @@
 }
 
 .sub:hover {
-    background-color: grey;
+    background-color: #90c7e8;
 }
 
 
@@ -183,7 +184,7 @@
     left: 0;
     right: 0;
     width: 200px;
-    background-color: red;
+    background-color: #fa786e;
     border: none;
     color: white;
     padding: 16px 32px;
@@ -195,5 +196,86 @@
 }
 
 .del:hover {
-    background-color: grey;
+    background-color: #e89089;
+}
+
+.show {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 200px;
+    background-color: #fa786e;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin-top: 0px;
+    cursor: pointer;
+    border-radius: 40px;
+    font-size: 20px;
+}
+
+.show:hover {
+    background-color: #e89089;
+}
+
+
+
+
+
+
+
+
+.sbox {
+    outline: none !important;
+    display: inline-block;
+    position: relative;
+    transform: translate(-50%, -50%);
+}
+
+.sbox select {
+    outline: none !important;
+    background-color: #d6d6d6;
+    color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 60px;
+    border-radius: 30px;
+    width: 350px;
+    
+    font-size: 20px;
+    box-shadow: 0 0px 50px rgba(100, 100, 100, 0.8);
+    -webkit-appearance: button;
+    appearance: button;
+   
+}
+
+.sbox::before {
+    outline: none !important;
+    content: "\f13a";
+    font-family: FontAwesome;
+    position: absolute;
+    
+    right: 0;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 28px;
+    line-height: 60px;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(55, 55, 55, 0.2);
+    pointer-events: none;
+    border-radius: 30px;
+}
+
+.sbox:hover::before {
+    outline: none !important;
+    color: rgba(55, 55, 55, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.sbox select option {
+    outline: none !important;
+    padding: 100px;
+
 }

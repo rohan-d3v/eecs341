@@ -39,7 +39,15 @@
                 </div>
             </div>
 
-            <button class="hov" onclick="location.href='search.php'" type="browseButton">Search</button>
+            <div class="dropdown">
+                <button class="dropbtn">Search</button>
+                <div class="dropdown-content">
+                    <a class="hov" href="searchmain.php">Main</a>
+                    <a class="hov" href="searchallclub.php">Among All Clubs</a>
+                    <a class="hov" href="searchallyear.php">Among All Years</a>
+                    <a class="hov" href="searchmember.php">Member</a>
+                </div>
+            </div>
 
         </div>
 
