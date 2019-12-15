@@ -57,10 +57,8 @@
         <br>
         <br>
 
-        <div class="search-box">
-            <input type="text" name = "date" id = "date" value="" class="search-txt" placeholder="New Date [in MMDD]"/>
-            <div class="search-btn">
-            </div>
+        <div class="date-search-box">
+            <input type="date" name = "date" id = "date" value="" class="date-search-txt" placeholder="Date"/>
         </div>
 
         <br>

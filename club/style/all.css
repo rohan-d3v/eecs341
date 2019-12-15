@@ -95,6 +95,53 @@
 
 
 
+.date-search-box {
+    display: inline-block;
+    position: relative;
+    transform: translate(-50%, -50%);
+
+    background: white;
+
+    padding: 5px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0px 35px rgba(0, 0, 0, 0.3);
+    
+    justify-content: space-between;
+}
+.date-search-box:hover > .date-search-txt {
+    width: 200px;
+    padding-left:100px;
+}
+
+.date-search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    padding-left: 20px;
+    color: grey;
+    font-size: 14px;
+    transition: 0.4s;
+    line-height: 30px;
+    top: 0;
+    height: 100px
+    width: 100px;
+    text-align: middle;
+    font-weight: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
