@@ -27,7 +27,7 @@
 
         <br>
 
-        <form action="addBudget.php" id="clubForm" method="post">
+        <form action="backend/addBudget.php" id="clubForm" method="post">
             <div class = "umbrella">
 
                 <br>

@@ -31,7 +31,7 @@
         <br>
         <br>
 
-        <form action="/backend/updateExec.php" id="clubForm" method="post">
+        <form action="backend/updateExec.php" id="clubForm" method="post">
             <div class = "umbrella">
                 <br>
 

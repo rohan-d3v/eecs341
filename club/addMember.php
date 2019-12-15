@@ -27,7 +27,7 @@
 
         <br>
 
-        <form action="/backend/addMember.php" id="clubForm" method="post">
+        <form action="backend/addMember.php" id="clubForm" method="post">
             <div class = "umbrella">
 
 

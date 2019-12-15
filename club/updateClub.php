@@ -25,7 +25,7 @@
         ?>
 
             
-        <form action="/backend/updateClub.php" id="clubForm" method="post">
+        <form action="backend/updateClub.php" id="clubForm" method="post">
 
             <div class = "umbrella">
             

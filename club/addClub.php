@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
  <!-- This HTML file serves as the page to add clubs -->
 <html>
@@ -23,7 +25,7 @@
         ?>
 
             
-        <form action="/backend/addClub.php" id="clubForm" method="post">
+        <form action="backend/addClub.php" id="clubForm" method="post">
 
             <div class = "umbrella">
             
