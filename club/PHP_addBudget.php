@@ -3,14 +3,13 @@
 	include "PHP_common.php";
 
 	$year		= strval($_POST["yearList"]);
-	$semester 	= strval($_POST["semesterList"]);
 	$budget 	= strval($_POST["budget"]);
 	$id   		= strval($_POST["id"]);
 
 
 
 
-	$sql = "insert into budget(clubID, year, amountTotal) values('$id', '$year', '$budget')";
+	$sql = "insert into Budget(clubID, year, amountTotal) values('$id', '$year', '$budget')";
 
 
 
