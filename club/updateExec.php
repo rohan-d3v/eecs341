@@ -29,19 +29,6 @@
 
         <br>
         <br>
-
-        <input class="del" type="submit" value="DELETE PRESIDENT">
-        <input class="del" type="submit" value="DELETE VICE PRESIDENT">
-        <input class="del" type="submit" value="DELETE TREASURER">
-        <input class="del" type="submit" value="DELETE RISK MANAGER">
-        <input class="del" type="submit" value="DELETE ADVISOR">
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
         
         <div class="search-box">
             <input type="text" name = "president" id = "president" value=""class="search-txt" placeholder="New President"/>
