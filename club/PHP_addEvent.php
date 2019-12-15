@@ -11,14 +11,14 @@
 
 	if (isset($_POST["food"])){
         $food = 1;
-    }
+	}
 	if (!isset($_POST["food"])){
 		$food = 0;
 	}
 
 	echo $date;
 
-	$sql = "insert into events(eventName, eventDate, food, location, clubID) values('$name', '$date', '$food', '$room', '$clubID')";
+	$sql = "insert into Event(eventName, eventDate, food, location, clubID) values('$name', '$date', '$food', '$room', '$clubID')";
 
 
 	if (mysqli_query($conn, $sql)) {
