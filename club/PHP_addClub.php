@@ -2,13 +2,12 @@
 	include "PHP_common.php";
 
 
-	$id   = uniqid();
 	$name = strval($_POST["name"]);
 	$type = strval($_POST["typeList"]);
 
 	echo $_POST["name"];
 	echo $_POST["typeList"];
-	$sql1 = "insert into club(clubID, clubName, clubType) values('$id', '$name', '$type')"; 
+	$sql1 = "insert into Club(clubName, clubType) values('$name', '$type')"; 
 
 
 	if (mysqli_query($conn, $sql1)) {
