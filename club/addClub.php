@@ -19,16 +19,16 @@
             <h1>CWRU Clubs</h1>
             <h1>ADD CLUB</h1><br>
         </div>
-        
+
         <?php
             include('navbar.php');
         ?>
 
-            
+
         <form action="backend/addClub.php" id="clubForm" method="post">
 
             <div class = "umbrella">
-            
+
 
                 <div class="search-box">
                     <input type="text" name = "name" id = "name" value="" class="search-txt" placeholder="Club Name"/>
@@ -37,7 +37,7 @@
                 </div>
 
                 <br>
-                <br> 
+                <br>
 
 
                 <div class="box">
@@ -54,7 +54,7 @@
                 <br>
                 <div class="group">Executive Team (Optional | Can Add Later): </div>
                 <br>
-                <br> 
+                <br>
 
                 <div class="box">
                 <select name="yearList" id="yearList">
@@ -67,8 +67,8 @@
                 </div>
 
                 <br>
-                <br> 
-                
+                <br>
+
 
                 <div class="search-box">
                     <input type="text" name = "president" id = "president" value=""class="search-txt" placeholder="President"/>
@@ -78,7 +78,7 @@
                 </div>
 
                 <div class="box">
-                <select name="typeList" id="pYearList">
+                <select name="pYearList" id="pYearList">
                     <option value="Freshman">Freshman</option>
                     <option value="Sophmore">Sophmore</option>
                     <option value="Junior">Junior</option>
@@ -87,8 +87,8 @@
                 </div>
 
                 <br>
-                <br> 
-                
+                <br>
+
                 <div class="search-box">
                     <input type="text" name = "vicePresident" id = "vicePresident" value="" class="search-txt" placeholder="Vice President"/>
                     <input type="text" name = "vid" id = "vid" value="" class="search-txt" placeholder="Student ID (Optional)"/>
@@ -97,7 +97,7 @@
                 </div>
 
                 <div class="box">
-                <select name="typeList" id="vYearList">
+                <select name="vYearList" id="vYearList" value = "freshman">
                     <option value="Freshman">Freshman</option>
                     <option value="Sophmore">Sophmore</option>
                     <option value="Junior">Junior</option>
@@ -107,17 +107,17 @@
 
 
                 <br>
-                <br> 
-                
+                <br>
+
                 <div class="search-box">
                     <input type="text" name = "treasurer" id = "treasurer" value="" class="search-txt" placeholder="Treasurer"/>
                     <input type="text" name = "tid" id = "tid" value="" class="search-txt" placeholder="Student ID (Optional)"/>
                     <div class="search-btn">
                     </div>
                 </div>
-                
+
                 <div class="box">
-                <select name="typeList" id="tYearList">
+                <select name="tYearList" id="tYearList">
                     <option value="Freshman">Freshman</option>
                     <option value="Sophmore">Sophmore</option>
                     <option value="Junior">Junior</option>
@@ -127,7 +127,7 @@
 
 
                 <br>
-                <br> 
+                <br>
 
                 <div class="search-box">
                     <input type="text" name = "riskManager" id = "riskManager" value="" class="search-txt" placeholder="Risk Manager"/>
@@ -137,7 +137,7 @@
                 </div>
 
                 <div class="box">
-                <select name="typeList" id="rYearList">
+                <select name="rYearList" id="rYearList">
                     <option value="Freshman">Freshman</option>
                     <option value="Sophmore">Sophmore</option>
                     <option value="Junior">Junior</option>
@@ -147,21 +147,21 @@
 
 
                 <br>
-                <br> 
+                <br>
 
 
                 <div class="search-box">
                     <input type="text" name = "advisor" id = "advisor" value="" class="search-txt" placeholder="Advisor"/>
                     <div class="search-btn">
                 </div>
-                
+
 
                 <br>
                 <br>
-            
-                
+
+
                 <input class="sub" type="submit">
-                
+
                 <br>
                 <br>
                 <br>
@@ -169,8 +169,8 @@
 
             </div>
 
-            
-        
+
+
         </form>
 
 

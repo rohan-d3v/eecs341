@@ -25,10 +25,10 @@ if (!$conn) {
   $rmyear = strval($_POST["rYearList"]);
   $advisor   = strval($_POST["advisor"]);
   $id = uniqid();
-  $pid = uniqid(p);
-  $vid = uniqid(v);
-  $tid = uniqid(t);
-  $rid = uniqid(r);
+  $pid = uniqid('p');
+  $vid = uniqid('v');
+  $tid = uniqid('t');
+  $rid = uniqid('r');
 
 
 	$sql = "insert into club(clubID, name, type, memberNumber) values('$id', '$name', '$type')";      //don't know how to do count
