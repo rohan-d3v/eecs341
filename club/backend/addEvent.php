@@ -13,6 +13,12 @@
 	$sql = "insert into event(eventID, name, date, food, buildingID, clubID) values('$id', '$name', '$date', '$food', '$bid', '$cid')";
 
 
-	include "commonadd.php";
+	if (mysqli_query($conn, $sql1)) {
+		header('Location: addResult.php');
+	} else {
+    	echo "Error Adding Data";
+	}
+
+	mysqli_close($conn);
 
 ?>

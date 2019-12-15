@@ -21,14 +21,20 @@
 	$rid 	= uniqid(r);
 
 
-	$sql = "insert into club(clubID, name, type, memberNumber) values('$id', '$name', '$type')";      //don't know how to do count
-	$sql = "insert into execTeam(clubID, year, president, viceP, treasurer, riskM, advisor) values('$id', '$year', '$pid', '$vid', '$tid', '$rid', '$advisor')";
-	$sql = "insert into member(studentID, clubID, name, year) values('$pid', '$id', '$president', '$pyear')";
-	$sql = "insert into member(studentID, clubID, name, year) values('$vid', '$id', '$viceP', '$vpyear')";
-	$sql = "insert into member(studentID, clubID, name, year) values('$tid', '$id', '$treasurer', '$tyear')";
-	$sql = "insert into member(studentID, clubID, name, year) values('$rid', '$id', '$riskM', '$rmyear')";
+
+	$sql1 = "insert into execTeam(clubID, year, president, viceP, treasurer, riskM, advisor) values('$id', '$year', '$pid', '$vid', '$tid', '$rid', '$advisor')";
+	$sql2 = "insert into member(studentID, clubID, name, year) values('$pid', '$id', '$president', '$pyear')";
+	$sql3 = "insert into member(studentID, clubID, name, year) values('$vid', '$id', '$viceP', '$vpyear')";
+	$sql4 = "insert into member(studentID, clubID, name, year) values('$tid', '$id', '$treasurer', '$tyear')";
+	$sql5 = "insert into member(studentID, clubID, name, year) values('$rid', '$id', '$riskM', '$rmyear')";
 
 
-	include "commonadd.php";
+	if (mysqli_query($conn, $sql1) || mysqli_query($conn, $sql2) || mysqli_query($conn, $sql3) || mysqli_query($conn, $sql4) || mysqli_query($conn, $sql5)) {
+		header('Location: addResult.php');
+	} else {
+    	echo "Error Adding Data";
+	}
+
+	mysqli_close($conn);
 
 ?>

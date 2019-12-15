@@ -14,6 +14,12 @@
 
 
 
-	include "commonadd.php";
+	if (mysqli_query($conn, $sql1)) {
+		header('Location: addResult.php');
+	} else {
+    	echo "Error Adding Data";
+	}
+
+	mysqli_close($conn);
 
 ?>
