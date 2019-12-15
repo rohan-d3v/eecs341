@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/add.css"/>
     <link rel="stylesheet" type="text/css" href="style/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="style/checkbox.css"/>
     <script src="https://kit.fontawesome.com/cfe22e3d35.js" crossorigin="anonymous"></script>
   </head>
 
@@ -14,39 +15,24 @@
 
     <div class="title">
         <h1>CWRU Clubs</h1>
-        <h1>ADD BUDGET</h1><br>
+        <h1>UPDATE EVENT</h1><br>
     </div>
     
-    <div class="nav1">
-        <button class="hov" onclick="location.href='home.html'" type="homeButton">Home</button>
-
-        <div class="dropdown">
-          <button class="dropbtn">Add</button>
-          <div class="dropdown-content">
-            <a class="hov" href="add.html">Club</a>
-            <a class="hov" href="addEvent.html">Event</a>
-            <a class="hov" href="addExecTeam.html">Executive Team</a>
-            <a class="hov" href="addBudget.html">Budget</a>
-            <a class="hov" href="addMember.html">Member</a>
-          </div>
-        </div>
-
-        <button class="hov" onclick="location.href='search.html'" type="browseButton">Search</button>
-        <button class="hov" onclick="location.href='update.html'" type="updateButton">Update</button>
-    </div>
+    <?php
+        include('navbar.php');
+    ?>
 
     <div class="content">
-      <p>Add to the collection of budgets</p>
+    <p>Add to the collection of events and locations</p>
     </div>
 
     <br>
 
-    <form action="addBudget.php" id="clubForm" method="post">
+    <form action="/backend/updateEvent.php" id="clubForm" method="post">
       <div class = "umbrella">
 
         <br>
         <br>
-
 
         <div class="search-box">
             <input type="text" name = "id" id = "id" value="" class="search-txt" placeholder="Club ID"/>
@@ -54,8 +40,9 @@
             </div>
         </div>
 
+
         <br>
-        <br> 
+        <br>
 
         <div class="box">
         <select name="yearList" id="yearList">
@@ -67,20 +54,61 @@
         </select>
         </div>
 
+
         <br>
-        <br> 
-        
+        <br>
 
         <div class="search-box">
-            <input type="text" name = "budget" id = "budget" value=""class="search-txt" placeholder="Budget Amount"/>
+          <input type="text" name = "eveName" id = "eveName" value="" class="search-txt" placeholder="Event Name"/>
+          <div class="search-btn">
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="search-box">
+            <input type="text" name = "date" id = "date" value="" class="search-txt" placeholder="Date (in MMDD format)"/>
             <div class="search-btn">
             </div>
         </div>
 
         <br>
         <br>
+
+        <div class="search-box">
+          <input type="text" name = "room" id = "room" value="" class="search-txt" placeholder="Location"/>
+          <div class="search-btn">
+          </div>
+        </div>
+
         <br>
+        <br>
+
+        <div class="search-box">
+          <input type="text" name = "capacity" id = "capacity" value="" class="search-txt" placeholder="Capacity"/>
+          <div class="search-btn">
+          </div>
+        </div>
+
+        
+        <br>
+        <br>
+        <label class="checkbox-label">
+            <input type="checkbox" name = "food" id = "food" value="">
+            <span class="checkbox-custom circular"></span>
+        </label>
+        <div class="input-title">Food Provided</div>
+        
+
         <input class="sub" type="submit">
+
+        <br>
+        <br>
+        <br>
+        <br>
+                <br>
+        <br>
       </div>
 
       

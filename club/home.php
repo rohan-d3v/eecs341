@@ -14,23 +14,10 @@
             <h1>HOME</h1><br>
         </div>
         
-        <div class="nav1">
-            <button class="hov" onclick="location.href='home.html'" type="homeButton">Home</button>
-            
-            <div class="dropdown">
-              <button class="dropbtn">Add</button>
-              <div class="dropdown-content">
-                <a class="hov" href="add.html">Club</a>
-                <a class="hov" href="addEvent.html">Event</a>
-                <a class="hov" href="addExecTeam.html">Executive Team</a>
-                <a class="hov" href="addBudget.html">Budget</a>
-                <a class="hov" href="addMember.html">Member</a>
-              </div>
-            </div>
-
-            <button class="hov" onclick="location.href='search.html'" type="browseButton">Search</button>
-            <button class="hov" onclick="location.href='update.html'" type="updateButton">Update</button>
-        </div>
+        <?php
+            include('navbar.php');
+        ?>
+        
         <div class="content">
             <p>University clubs are an integrated part of student lives on campus. To keep clubs organized under the Student Government umbrella, an archive within the university database system is necessary. Statistics on the file, such as membership, location, executive team, events, and budget are essential information to help the student government manage clubs in aspects such as deciding upcoming budget allocation. On top of that, a database system is especially convenient and helpful when the number of clubs grows large </p>
         </div>

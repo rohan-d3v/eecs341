@@ -1,5 +1,5 @@
 <!DOCTYPE html>
- <!-- This HTML file serves as the page to add exec team -->
+ <!-- This HTML file serves as the page to add clubs -->
 <html>
     <head>
         <title>CWRU Clubs</title>
@@ -16,50 +16,45 @@
    
         <div class="title">
             <h1>CWRU Clubs</h1>
-            <h1>ADD EXEC TEAM</h1><br>
+            <h1>UPDATE CLUB</h1><br>
         </div>
         
-        <div class="nav1">
-            <button class="hov" onclick="location.href='home.html'" type="homeButton">Home</button>
-            <div class="dropdown">
-              <button class="dropbtn">Add</button>
-              <div class="dropdown-content">
-                <a class="hov" href="add.html">Club</a>
-                <a class="hov" href="addEvent.html">Event</a>
-                <a class="hov" href="addExecTeam.html">Executive Team</a>
-                <a class="hov" href="addBudget.html">Budget</a>
-                <a class="hov" href="addMember.html">Member</a>
-              </div>
-            </div>
-            <button class="hov" onclick="location.href='search.html'" type="browseButton">Search</button>
-            <button class="hov" onclick="location.href='update.html'" type="updateButton">Update</button>
-        </div>
 
+        <?php
+            include('navbar.php');
+        ?>
 
-        <div class="content">
-            <p>Add to the collection of budgets</p>
-        </div>
+            
+        <form action="/backend/updateClub.php" id="clubForm" method="post">
 
-        <br>
-        <br>
-
-        <form action="addExecTeam.php" id="clubForm" method="post">
             <div class = "umbrella">
-                <br>
+            
 
                 <div class="search-box">
-                    <input type="text" name = "id" id = "id" value="" class="search-txt" placeholder="Club ID"/>
+                    <input type="text" name = "name" id = "name" value="" class="search-txt" placeholder="Club Name"/>
                     <div class="search-btn">
                     </div>
                 </div>
 
                 <br>
-                <br>
+                <br> 
 
-                <div class="group">Executive Team of Year (give studentID if they have one, if not give a name)</div>
+
+                <div class="box">
+                <select name="typeList" id="typeList">
+                    <option value="" disabled selected>Type</option>
+                    <option value="Athletic">Athletic</option>
+                    <option value="Art">Art</option>
+                    <option value="Academic">Academic</option>
+                    <option value="Political">Political</option>
+                    <option value="Other">Other</option>
+                </select>
+                </div>
 
                 <br>
+                <div class="group">Executive Team (Optional | Can Add Later): </div>
                 <br>
+                <br> 
 
                 <div class="box">
                 <select name="yearList" id="yearList">
@@ -70,8 +65,6 @@
                     <option value="2022">2022</option>
                 </select>
                 </div>
-
-
 
                 <br>
                 <br> 
@@ -174,9 +167,12 @@
                 <br>
                 <br>
 
-            </div>    
+            </div>
+
+            
+        
         </form>
+
 
     </body>
 </html>
-

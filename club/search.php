@@ -19,27 +19,13 @@
             <h1>SEARCH</h1><br>
         </div>
         
-        <div class="nav1">
-            <button class="hov" onclick="location.href='home.html'" type="homeButton">Home</button>
-            
-            <div class="dropdown">
-              <button class="dropbtn">Add</button>
-              <div class="dropdown-content">
-                <a class="hov" href="add.html">Club</a>
-                <a class="hov" href="addEvent.html">Event</a>
-                <a class="hov" href="addExecTeam.html">Executive Team</a>
-                <a class="hov" href="addBudget.html">Budget</a>
-                <a class="hov" href="addMember.html">Member</a>
-              </div>
-            </div>
-
-            <button class="hov" onclick="location.href='search.html'" type="browseButton">Search</button>
-            <button class="hov" onclick="location.href='update.html'" type="updateButton">Update</button>
-        </div>
+        <?php
+            include('navbar.php');
+        ?>
 
 
         <div class="content">
-        <form action="search.php" id="clubForm" method="post">
+        <form action="/backend/search.php" id="clubForm" method="post">
                             
 
             <div class="box">
