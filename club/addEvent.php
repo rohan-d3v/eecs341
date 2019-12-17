@@ -34,7 +34,7 @@
         <br>
 
         <div class="search-box">
-            <input type="text" name = "room" id = "room" value="" class="search-txt" placeholder="Location"/>
+            <input type="text" name = "location" id = "location" value="" class="search-txt" placeholder="Location"/>
             <div class="search-btn">
             </div>
         </div>
