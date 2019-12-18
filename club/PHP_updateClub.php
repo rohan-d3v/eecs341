@@ -10,9 +10,11 @@
 	$del = strval($_POST["delete"]);
 	if ($name != null) {
 		$sql1 = "UPDATE Club SET clubName = '$name' WHERE clubID = '$cid'";
+		echo $sql1;
 	}
 	if ($type != null) {
 		$sql2 = "UPDATE Club SET clubType = '$type' WHERE clubID = '$cid'";
+		echo $sql2;
 	}
 	if (isset($_POST["delete"])){
         $sql3 = "DELETE from Club where clubID = '$cid'";
