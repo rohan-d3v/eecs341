@@ -35,7 +35,7 @@
 
     $sql = "select year, max(amountTotal) from budget where" .$clubVal2 " group by year";
     # show year with lowest budget
-
+$sql = "Select c.clubID, c.clubName, b0.amountTotal From Club c, Budget b0 Where b0.amountTotal >= (Select b1.amountTotal From Budget b1 Where b1.clubID <> b0.clubID) And year = 2019;"
 
 	$result = mysqli_query($conn, $sql);
 
