@@ -13,7 +13,7 @@
 
 
 
-	if (mysqli_query($conn, $sql1)) {
+	if (mysqli_query($conn, $sql)) {
 		header('Location: addResult.php');
 	} else {
     	echo "Error Adding Data";

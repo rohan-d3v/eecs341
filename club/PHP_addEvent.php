@@ -16,8 +16,8 @@
 		$food = 0;
 	}
 
-
 	$sql = "insert into Event(eventName, eventDate, food, location, clubID) values('$name', '$date', '$food', '$location', '$clubID')";
+	echo $sql;
 
 
 	if (mysqli_query($conn, $sql)) {
