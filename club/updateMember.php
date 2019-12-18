@@ -40,7 +40,7 @@
 
         <br>
         <br>
-
+	<input class="sub" type="submit" value="UPDATE">
         <input class="del" type="submit" value="DELETE MEMBER">
         
 <?php include('footer.php');?>

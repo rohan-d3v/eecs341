@@ -3,7 +3,7 @@
 <h1>SEARCH AMONG ALL CLUBS</h1><br>
 </div>
 
-<form action="/backend/search.php" id="clubForm" method="post">
+<form action="PHP_searchclub.php" id="clubForm" method="post">
     <div class="umbrella">   
 
         <br>  
@@ -25,8 +25,8 @@
             <select name="searchOption" id="searchOption">
                 <option value="" disabled selected>Seach Option</option>
 
-                <option value="exec">SHOW ALL EVENTS WITH FOOD</option>
-                <option value="avfbudget">SHOW ALL CLUBS WITH BUDGETS</option>
+                <option value="Event">SHOW ALL EVENTS</option>
+                <option value="Budget">SHOW ALL CLUBS WITH BUDGETS</option>
                 <option value="avfbudget">SHOW AVERAGE BUDGET</option>
                 <option value="avfbudget">SHOW CLUB WITH THE HIGHEST BUDGET</option>
                 <option value="avfbudget">SHOW CLUB WITH THE LOWEST BUDGET</option>

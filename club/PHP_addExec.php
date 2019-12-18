@@ -14,7 +14,7 @@
 
 
 
-	$sql1 = "insert into ExecTeam(clubID, year, president, viceP, treasurer, riskManager, advisor) values('$id', '$year', '$president', '$viceP', '$treasurer', '$riskM', '$advisor')";
+	$sql1 = "insert into ExecTeam(clubID, year, president, vicePresident, treasurer, riskManager, advisor) values('$clubID', '$year', '$president', '$viceP', '$treasurer', '$riskM', '$advisor')";
 
 	if (mysqli_query($conn, $sql1)) {
 		header('Location: addResult.php');

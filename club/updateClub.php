@@ -16,15 +16,13 @@
 
         <br>
         <br>
-
-        <input class="del" type="submit" value="DELETE CLUB">
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+	<label class="checkbox-label">
+            <input type="checkbox" name = "delete" id = "delete" value="">
+            <span class="checkbox-custom circular"></span>
+        </label>
+        <div class="input-title">Delete Club?</div>
+	<br>
+	<br>
 
         <div class="search-box">
             <input type="text" name = "name" id = "name" value="" class="search-txt" placeholder="New Club Name"/>
