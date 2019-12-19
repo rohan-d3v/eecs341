@@ -3,7 +3,7 @@
 <h1>SEARCH AMONG ALL CLUBS</h1><br>
 </div>
 
-<form action="PHP_searchclub.php" id="clubForm" method="post">
+<form action="PHP_searchallclub.php" id="clubForm" method="post">
     <div class="umbrella">   
 
         <br>  

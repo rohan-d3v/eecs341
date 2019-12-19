@@ -3,7 +3,7 @@
 <h1>SEARCH ALL CLUBS THAT A STUDENT JOINED</h1><br>
 </div>
 
-<form action="/backend/search.php" id="clubForm" method="post">
+<form action="PHP_searchmem.php" id="clubForm" method="post">
     <div class="umbrella">   
 
         <br>  

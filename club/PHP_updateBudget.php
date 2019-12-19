@@ -3,19 +3,6 @@
 	include "PHP_common.php";
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 	if (mysqli_query($conn, $sql)) {
 		header('Location: updateResult.php');
 	} else {
