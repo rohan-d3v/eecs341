@@ -3,7 +3,6 @@
 <h1>SEARCH AMONG ALL CLUBS</h1><br>
 </div>
 
-<form action="PHP_searchallclub.php" id="clubForm" method="post">
     <div class="umbrella">   
 
         <br>  
@@ -21,15 +20,15 @@
         <br>
         <br>
 
- 	<input class="sub" type="submit" value="All Events">
+ 	<form method='post' action = "/PHP_searchclub.php"><input class="sub" type="submit" value="All Events"></form>
         <br>
-        <input class="sub" type="submit" value="CLUBS WITH BUDGETS">
+	<form method='post' action = "/PHP_searchbudget.php"><input class="sub" type="submit" value="All Events"></form>
         <br>
         <input class="sub" type="submit" value="AVERAGE BUDGET">
         <br>
-        <input class="sub" type="submit" value="CLUB WITH HIGHEST BUDGET">
+	<form method='post' action = "/PHP_searchhighestbudget.php"><input class="sub" type="submit" value="Club w/ Highest Budget"></form>
         <br>
-        <input class="sub" type="submit" value="CLUB WITH LOWEST BUDGET">
+        <form method='post' action = "/PHP_searchlowestbudget.php"><input class="sub" type="submit" value="CLUB W/ LOWEST BUDGET"></form>
         <br>
         <input class="sub" type="submit" value="CLUB WITH MOST MEMBERS">
         <br>

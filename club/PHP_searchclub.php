@@ -26,8 +26,7 @@ if (!$conn) {
 	if($name=="blank" && $type=="blank")
 	{$whereVal = "";};
 
-	$sql = "select * from $name";   // this searches with year, clubid, name, and type if they are inputted
-	echo $sql;
+	$sql = "select * from Event";   // this searches with year, clubid, name, and type if they are inputted
 	$result = mysqli_query($conn, $sql);
 
 	if (mysqli_num_rows($result) > 0)
