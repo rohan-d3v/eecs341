@@ -20,22 +20,10 @@
         <br>
         <br>
 
-        <input name="allyear1" class="sea" type="submit" value="SHOW ALL PRESIDENTS">
+        <input name="allyear1" class="sea" type="submit" value="SHOW ALL EVENTS">
         <br>
-        <input name="allyear2" class="sea" type="submit" value="SHOW ALL VICE PRESIDENTS">
+        <input name="allyear2" class="sea" type="submit" value="SHOW THE YEAR WITH THE HIGHEST BUDGET">
         <br>
-        <input name="allyear3" class="sea" type="submit" value="SHOW ALL TREASURES">
-        <br>
-        <input name="allyear4" class="sea" type="submit" value="SHOW ALL RISK MANAGERS">
-        <br>
-        <input name="allyear5" class="sea" type="submit" value="SHOW ALL ADVISORS">
-        <br>
-        <input name="allyear6" class="sea" type="submit" value="SHOW ALL EVENTS">
-        <br>
-        <input name="allyear7" class="sea" type="submit" value="SHOW ALL EVENTS WITH FOOD">
-        <br>
-        <input name="allyear8" class="sea" type="submit" value="SHOW THE YEAR WITH THE HIGHEST BUDGET">
-        <br>
-        <input name="allyear9" class="sea" type="submit" value="SHOW THE YEAR WITH THE LOWEST BUDGET">
+        <input name="allyear3" class="sea" type="submit" value="SHOW THE YEAR WITH THE LOWEST BUDGET">
     	    
 <?php include('footer.php');?>
