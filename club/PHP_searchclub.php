@@ -13,21 +13,21 @@ if (!$conn) {
 }
 
 
-  $name   = strval($_POST["searchOption"]);
+  $name   = strval($_POST["Event"]);
   $type = strval($_POST["typeList"]);
 
 	$whereVal = " where ";
 	$nameVal  = "name='$name' ";
-  $typeVal  = "AND name='$type' ";
+  	$typeVal  = "AND name='$type' ";
 
 	if($name=="blank"){$nameVal = ""; $typeVal = "type='$type' ";};
-  if($type=="blank"){$typeVal = "";};
+  	if($type=="blank"){$typeVal = "";};
 
 	if($name=="blank" && $type=="blank")
 	{$whereVal = "";};
 
 	$sql = "select * from $name";   // this searches with year, clubid, name, and type if they are inputted
-
+	echo $sql;
 	$result = mysqli_query($conn, $sql);
 
 	if (mysqli_num_rows($result) > 0)
