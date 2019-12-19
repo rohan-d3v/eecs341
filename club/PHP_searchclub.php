@@ -13,20 +13,22 @@ if (!$conn) {
 }
 
 
-  $name   = strval($_POST["searchOption"]);
+  $name   = strval($_POST["name"]);
   $type = strval($_POST["typeList"]);
 
 	$whereVal = " where ";
 	$nameVal  = "name='$name' ";
-  $typeVal  = "AND name='$type' ";
+  $typeVal  = "AND clubName='$type' ";
 
-	if($name=="blank"){$nameVal = ""; $typeVal = "type='$type' ";};
-  if($type=="blank"){$typeVal = "";};
+	if($name==""){$nameVal = ""; $typeVal = " Clubtype='$type' ";};
+  if($type==""){$typeVal = "";};
 
-	if($name=="blank" && $type=="blank")
+	if($name=="" && $type=="")
 	{$whereVal = "";};
 
-	$sql = "select * from $name";   // this searches with year, clubid, name, and type if they are inputted
+	$sql = "select * from club " .$whereVal .$nameVal .$typeVal;   // this searches with year, clubid, name, and type if they are inputted
+
+  echo $sql;
 
 	$result = mysqli_query($conn, $sql);
 
@@ -35,10 +37,9 @@ if (!$conn) {
 <table id = "clubList"">
         <thead>
             <tr>
-                <th style="padding-right:36px;">Event Date</th>
                 <th style="padding-right:36px;">Club ID</th>
+                <th style="padding-right:36px;">Type</th>
                 <th style="padding-right:36px;">Name</th>
-                <th style="padding-right:36px;">Location</th>
 
             </tr>
         </thead>
@@ -49,10 +50,9 @@ if (!$conn) {
 
 
             <tr>
-		<td class="updateSize" style="padding-right:36px;"><?php echo $row["eventDate"]; ?></td>
-                <td class="updateSize" style="padding-right:36px;"><?php echo $row["clubID"]; ?></td>
-                <td class="updateclub" style="padding-right:36px;"><?php echo $row["eventName"]; ?></td>
-                <td class="updateColor" style="padding-right:36px;"><?php echo $row["location"]; ?></td>
+                <td class="clubID" style="padding-right:36px;"><?php echo $row["clubID"]; ?></td>
+                <td class="clubType" style="padding-right:36px;"><?php echo $row["clubType"]; ?></td>
+                <td class="clubName" style="padding-right:36px;"><?php echo $row["clubName"]; ?></td>
 
 
 </tr>
