@@ -3,7 +3,7 @@
 <h1>SEARCH CLUB</h1><br>
 </div>
 
-<form action="backend/searchClub.php" id="clubForm" method="post">
+<form action="PHP_searchclub.php" id="clubForm" method="post">
     <div class = "umbrella">
 
         <br>
@@ -19,7 +19,7 @@
 
 
         <div class="box">
-        <select name="typeList" id="typeList">
+        <select name="typeList" id="typeList" value = "">
             <option value="" disabled selected>Type</option>
             <option value="Athletic">Athletic</option>
             <option value="Art">Art</option>

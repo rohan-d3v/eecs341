@@ -3,7 +3,7 @@
 <h1>SEARCH AMONG ALL YEARS</h1><br>
 </div>
 
-<form action="/backend/search.php" id="clubForm" method="post">
+<form action="PHP_searchallyear.php" id="clubForm" method="post">
     <div class="umbrella">   
 
         <br>  

@@ -43,23 +43,23 @@
         <br>
         <br>
 
-        <input name="allclub1" class="sea" type="submit" value="SHOW EXEC TEAM">
+        <input name="main1" class="sea" type="submit" value="SHOW EXEC TEAM">
         <br>
-        <input name="allclub2" class="sea" type="submit" value="SHOW PRESIDENT">
+        <input name="main2" class="sea" type="submit" value="SHOW PRESIDENT">
         <br>
-        <input name="allclub3" class="sea" type="submit" value="SHOW VICE PRESIDENT">
+        <input name="main3" class="sea" type="submit" value="SHOW VICE PRESIDENT">
         <br>
-        <input name="allclub4" class="sea" type="submit" value="SHOW TREASURE">
+        <input name="main4" class="sea" type="submit" value="SHOW TREASURE">
         <br>
-        <input name="allclub5" class="sea" type="submit" value="SHOW RISK MANAGER">
+        <input name="main5" class="sea" type="submit" value="SHOW RISK MANAGER">
         <br>
-        <input name="allclub6" class="sea" type="submit" value="SHOW ADVISOR">
+        <input name="main6" class="sea" type="submit" value="SHOW ADVISOR">
         <br>
-        <input name="allclub7" class="sea" type="submit" value="SHOW ALL EVENTS">
+        <input name="main7" class="sea" type="submit" value="SHOW ALL EVENTS">
         <br>
-        <input name="allclub8" class="sea" type="submit" value="SHOW ALL EVENTS WITH FOOD">
+        <input name="main8" class="sea" type="submit" value="SHOW ALL EVENTS WITH FOOD">
         <br>
-        <input name="allclub9" class="sea" type="submit" value="SHOW ALL MEMBERS">
+        <input name="main9" class="sea" type="submit" value="SHOW ALL MEMBERS">
         
 
 <?php include('footer.php');?>
