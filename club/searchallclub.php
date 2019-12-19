@@ -23,17 +23,17 @@
 
         <input name="allclub1" class="sea" type="submit" value="SHOW ALL EVENTS">
         <br>
-        <input name="allclub1" class="sea" type="submit" value="SHOW ALL CLUBS WITH BUDGETS">
+        <input name="allclub2" class="sea" type="submit" value="SHOW ALL CLUBS WITH BUDGETS">
         <br>
-        <input name="allclub1" class="sea" type="submit" value="SHOW AVERAGE BUDGET">
+        <input name="allclub3" class="sea" type="submit" value="SHOW AVERAGE BUDGET">
         <br>
-        <input name="allclub1" class="sea" type="submit" value="SHOW CLUB WITH THE HIGHEST BUDGET">
+        <input name="allclub4" class="sea" type="submit" value="SHOW CLUB WITH THE HIGHEST BUDGET">
         <br>
-        <input name="allclub1" class="sea" type="submit" value="SHOW CLUB WITH THE LOWEST BUDGET">
+        <input name="allclub5" class="sea" type="submit" value="SHOW CLUB WITH THE LOWEST BUDGET">
         <br>
-        <input name="allclub1" class="sea" type="submit" value="SHOW CLUB WITH THE MOST MEMBERS">
+        <input name="allclub6" class="sea" type="submit" value="SHOW CLUB WITH THE MOST MEMBERS">
         <br>
-        <input name="allclub1" class="sea" type="submit" value="SHOW CLUB WITH THE LEAST MEMBERS">
+        <input name="allclub7" class="sea" type="submit" value="SHOW CLUB WITH THE LEAST MEMBERS">
 
 
 <?php include('footer.php');?>
