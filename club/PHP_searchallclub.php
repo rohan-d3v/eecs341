@@ -2,7 +2,7 @@
 
     include "PHP_common.php";
 
-    $name   = strval($_POST["searchOption"]);
+    $name = strval($_POST["searchOption"]);
     $type = strval($_POST["typeList"]);
 
 	$whereVal = " where ";
@@ -15,7 +15,9 @@
 	if($name=="blank" && $type=="blank")
 	{$whereVal = "";};
 
-	$sql = "select * from $name";   // this searches with year, clubid, name, and type if they are inputted
+	$sql = "select * from club " .$whereVal .$nameVal .$typeVal;
+
+    echo $sql;
 
 	$result = mysqli_query($conn, $sql);
 
@@ -31,10 +33,9 @@
         <table id = "clubList"">
             <thead>
                 <tr>
-                    <th style="padding-right:36px;">Event Date</th>
-                    <th style="padding-right:36px;">Club ID</th>
-                    <th style="padding-right:36px;">Name</th>
-                    <th style="padding-right:36px;">Location</th>
+                <th style="padding-right:36px;">Club ID</th>
+                <th style="padding-right:36px;">Type</th>
+                <th style="padding-right:36px;">Name</th>
                 </tr>
             </thead>
 
@@ -43,10 +44,9 @@
                 <?php while($row = mysqli_fetch_assoc($result)) : ?>
 
                 <tr>
-                <td class="updateSize" style="padding-right:36px;"><?php echo $row["eventDate"]; ?></td>
-                <td class="updateSize" style="padding-right:36px;"><?php echo $row["clubID"]; ?></td>
-                <td class="updateclub" style="padding-right:36px;"><?php echo $row["eventName"]; ?></td>
-                <td class="updateColor" style="padding-right:36px;"><?php echo $row["location"]; ?></td>
+                <td class="clubID" style="padding-right:36px;"><?php echo $row["clubID"]; ?></td>
+                <td class="clubType" style="padding-right:36px;"><?php echo $row["clubType"]; ?></td>
+                <td class="clubName" style="padding-right:36px;"><?php echo $row["clubName"]; ?></td>
                 </tr>
 
                 <?php endwhile; ?>
