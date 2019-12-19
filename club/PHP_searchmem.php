@@ -2,20 +2,15 @@
 
     include "PHP_common.php";
 
-    $name   = strval($_POST["searchOption"]);
-    $type = strval($_POST["typeList"]);
 
-    $whereVal = " where ";
-    $nameVal  = "name='$name' ";
-    $typeVal  = "AND name='$type' ";
+    // dont know what to put in the bracket []
+    
+	$name = strval($_POST["searchOption"]);
+	$year = strval($_POST["searchOption"]);
 
-    if($name=="blank"){$nameVal = ""; $typeVal = "type='$type' ";};
-    if($type=="blank"){$typeVal = "";};
+	// did not include any if statements here don't know what they do
 
-    if($name=="blank" && $type=="blank")
-    {$whereVal = "";};
-
-    $sql = "select * from $name";   // this searches with year, clubid, name, and type if they are inputted
+    $sql = "select clubName from Club, Member where Club.clubID = Member.clubID and name = $name and year = $year";
 
     $result = mysqli_query($conn, $sql);
 
@@ -31,8 +26,8 @@
         <table id = "clubList"">
             <thead>
                 <tr>
-                    <th style="padding-right:36px;">Club ID</th>
-                    <th style="padding-right:36px;">Club Name</th>
+                <th style="padding-right:36px;">Club ID</th>
+                <th style="padding-right:36px;">Club Name</th>
                 </tr>
             </thead>
 
@@ -42,7 +37,7 @@
 
                 <tr>
                 <td class="updateSize" style="padding-right:36px;"><?php echo $row["clubID"]; ?></td>
-                <td class="updateclub" style="padding-right:36px;"><?php echo $row["eventName"]; ?></td>
+                <td class="updateclub" style="padding-right:36px;"><?php echo $row["clubName"]; ?></td>
                 </tr>
 
                 <?php endwhile; ?>
