@@ -30,7 +30,7 @@
         <br>
         <form method='post' action = "/PHP_searchlowestbudget.php"><input class="sub" type="submit" value="CLUB W/ LOWEST BUDGET"></form>
         <br>
-        <input class="sub" type="submit" value="CLUB WITH MOST MEMBERS">
+        <form method='post' action = "/PHP_studentinall.php"><input class="sub" type="submit" value="Students in All Clubs "></form>
         <br>
         <input class="sub" type="submit" value="CLUB WITH LEAST MEMBERS">
 

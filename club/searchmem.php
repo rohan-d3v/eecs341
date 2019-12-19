@@ -9,7 +9,7 @@
         <br>  
 
         <div class="search-box">
-            <input type="text" name = "id" id = "id" value="" class="search-txt" placeholder="Student Name"/>
+            <input type="text" name = "name" id = "name" class="search-txt" placeholder="Student Name"/>
             <div class="search-btn">
             </div>
         </div>
@@ -21,11 +21,11 @@
             <select name="Year" id="Year">
                 <option value="" disabled selected>Year</option>
 
-                <option value="2000">ALL</option>
-                <option value="2000">2000</option>
-                <option value="2001">2001</option>
-                <option value="2002">2002</option>
-                <option value="2003">2003</option>
+                <option value="2019">ALL</option>
+                <option value="2019">2010</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
             </select>
         </div>
 
