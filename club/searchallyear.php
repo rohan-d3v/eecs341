@@ -20,25 +20,22 @@
         <br>
         <br>
 
-        <div class="sbox">
-            <select name="searchOption" id="searchOption">
-                <option value="" disabled selected>Seach Option</option>
-
-                <option value="exec">SHOW ALL PRESIDENTS</option>
-                <option value="budget">SHOW ALL VICE PRESIDENTS</option>
-                <option value="avfbudget">SHOW ALL TREASURES</option>
-                <option value="avfbudget">SHOW ALL RISK MANAGERS</option>
-                <option value="avfbudget">SHOW ALL ADVISORS</option>
-                <option value="avfbudget">SHOW ALL EVENTS</option>
-                <option value="avfbudget">SHOW ALL EVENTS WITH FOOD</option>
-                <option value="avfbudget">SHOW THE YEAR WITH THE HIGHEST BUDGET</option>
-                <option value="avfbudget">SHOW THE YEAR WITH THE LOWEST BUDGET</option>
-            </select>
-        </div>
+        <input name="allyear1" class="sea" type="submit" value="SHOW ALL PRESIDENTS">
+        <br>
+        <input name="allyear2" class="sea" type="submit" value="SHOW ALL VICE PRESIDENTS">
+        <br>
+        <input name="allyear3" class="sea" type="submit" value="SHOW ALL TREASURES">
+        <br>
+        <input name="allyear4" class="sea" type="submit" value="SHOW ALL RISK MANAGERS">
+        <br>
+        <input name="allyear5" class="sea" type="submit" value="SHOW ALL ADVISORS">
+        <br>
+        <input name="allyear6" class="sea" type="submit" value="SHOW ALL EVENTS">
+        <br>
+        <input name="allyear7" class="sea" type="submit" value="SHOW ALL EVENTS WITH FOOD">
+        <br>
+        <input name="allyear8" class="sea" type="submit" value="SHOW THE YEAR WITH THE HIGHEST BUDGET">
+        <br>
+        <input name="allyear9" class="sea" type="submit" value="SHOW THE YEAR WITH THE LOWEST BUDGET">
     	    
-        <br>
-        <br>
-        <br>
-        <input class="sub" type="submit" value="SEARCH">
-
 <?php include('footer.php');?>

@@ -253,16 +253,16 @@
     position: relative;
     left: 0;
     right: 0;
-    width: 200px;
+    width: 400px;
     background-color: #fa786e;
     border: none;
     color: white;
     padding: 16px 32px;
     text-decoration: none;
-    margin-top: 0px;
+    margin-top: 15px;
     cursor: pointer;
-    border-radius: 40px;
-    font-size: 20px;
+
+    font-size: 28px;
 }
 
 .show:hover {
@@ -270,6 +270,29 @@
 }
 
 .show:focus {outline:0;}
+
+
+.sea {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 400px;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin-top: 15px;
+    cursor: pointer;
+    border: 10px solid grey;
+    font-size: 28px;
+}
+
+.sea:hover {
+    background-color: #e89089;
+}
+
+.sea:focus {outline:0;}
 
 
 

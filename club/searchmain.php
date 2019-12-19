@@ -3,16 +3,13 @@
 <h1>SEARCH MAIN</h1><br>
 </div>
 
-<form action="/backend/search.php" id="clubForm" method="post">
+<form action="PHP_searchmain.php" id="clubForm" method="post">
     <div class="umbrella">   
 
         <br>  
 
         <input name="allclub" class="show" type="button" value="SHOW ALL CLUBS">
-
         <br>
-        <br>
-
         <input name="alllocation" class="show" type="button" value="SHOW ALL LOCATIONS">
 
         <br>
@@ -46,24 +43,23 @@
         <br>
         <br>
 
-        <div class="sbox">
-            <select name="searchOption" id="searchOption">
-                <option value="" disabled selected>Seach Option</option>
-
-                <option value="exec">SHOW EXEC TEAM</option>
-                <option value="budget">SHOW PRESIDENT</option>
-                <option value="avfbudget">SHOW VICE PRESIDENT</option>
-                <option value="exec">SHOW TREASURE</option>
-                <option value="budget">SHOW RISK MANAGER</option>
-                <option value="avfbudget">SHOW ADVISOR</option>
-                <option value="budget">SHOW ALL EVENTS</option>
-                <option value="avfbudget">SHOW ALL EVENTS WITH FOOD</option>
-                <option value="avfbudget">SHOW ALL MEMBERS</option>
-            </select>
-        </div>
-
+        <input name="allclub1" class="sea" type="submit" value="SHOW EXEC TEAM">
         <br>
-    	    
-        <input class="sub" type="submit" value="SEARCH">
+        <input name="allclub2" class="sea" type="submit" value="SHOW PRESIDENT">
+        <br>
+        <input name="allclub3" class="sea" type="submit" value="SHOW VICE PRESIDENT">
+        <br>
+        <input name="allclub4" class="sea" type="submit" value="SHOW TREASURE">
+        <br>
+        <input name="allclub5" class="sea" type="submit" value="SHOW RISK MANAGER">
+        <br>
+        <input name="allclub6" class="sea" type="submit" value="SHOW ADVISOR">
+        <br>
+        <input name="allclub7" class="sea" type="submit" value="SHOW ALL EVENTS">
+        <br>
+        <input name="allclub8" class="sea" type="submit" value="SHOW ALL EVENTS WITH FOOD">
+        <br>
+        <input name="allclub9" class="sea" type="submit" value="SHOW ALL MEMBERS">
+        
 
 <?php include('footer.php');?>
