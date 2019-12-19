@@ -26,7 +26,7 @@ if (!$conn) {
         if($name=="blank" && $type=="blank")
         {$whereVal = "";};
 
-        $sql = " Select c.clubName, b0.year, b0.amountTotal From Club c, Budget b0 Where b0.amountTotal < (Select b1.amountTotal From Budget b1 Where b1.clubID <> b0.clubID limit 1) And year = 2019 order by amountTotal desc limit 1;"
+        $sql = "Select c.clubName, b0.year, b0.amountTotal From Club c, Budget b0 Where b0.amountTotal > (Select b1.amountTotal From Budget b1 Where b1.clubID <> b0.clubID limit 1) And year = 2022 order by amountTotal desc limit 1;"
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) > 0)

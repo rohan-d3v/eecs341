@@ -1,3 +1,4 @@
+
 <?php
 $servername = 'localhost:3306';
 $username = 'group15';
@@ -13,18 +14,23 @@ if (!$conn) {
 }
 
 
-    // dont know what to put in the bracket []
+  $name   = strval($_POST["Event"]);
+  $type = strval($_POST["typeList"]);
 
-        $name = strval($_POST["name"]);
-        $year = strval($_POST["Year"]);
+        $whereVal = " where ";
+        $nameVal  = "name='$name' ";
+        $typeVal  = "AND name='$type' ";
 
-        // did not include any if statements here don't know what they do
+        if($name=="blank"){$nameVal = ""; $typeVal = "type='$type' ";};
+        if($type=="blank"){$typeVal = "";};
 
-    $sql = "select m.name from Member m where m.year = 2019 and not exists (select c.clubID from Club c) not in (Select m.clubID from Member m1 Where m1.name = m.name);"
-    $result = mysqli_query($conn, $sql);
-	echo $sql;
-    if (mysqli_num_rows($result) > 0)
+        if($name=="blank" && $type=="blank")
+        {$whereVal = "";};
 
+ $sql = " select distinct m.name from Member m where m.year = 2018 and not exists (select c.clubID from Club c) not in (select m.clubID from Member m1 where m1.name = m.name);";        
+$result = mysqli_query($conn, $sql);
+
+        if (mysqli_num_rows($result) > 0)
 ?>
 <table id = "clubList"">
         <thead>
@@ -40,7 +46,7 @@ if (!$conn) {
 
 
             <tr>
-                <td class="updateColor" style="padding-right:36px;"><?php echo $row["name"]; ?></td>
+                <td class="updateSize" style="padding-right:36px;"><?php echo $row["name"]; ?></td>
 
 
 </tr>
@@ -51,4 +57,4 @@ if (!$conn) {
         </div>
     </body>
 </html>
-
+
